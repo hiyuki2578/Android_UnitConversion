@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="prease_input">入力してください</string>
+	<string name="action_settings">設定</string>
+	<string name="app_name">単位換算</string>
+	<string name="unit">単位設定</string>
+	<string name="kilo_to_mile">キロメートルから海里</string>
+	<string name="mile_to_kilo">海里からキロメートル</string>
+	<string name="mile">海里</string>
+	<string name="kilo">km</string>
+	<string name="feet_to_meter">フィートからメートル</string>
+	<string name="meter_to_feet">メートルからフィート</string>
+	<string name="meter">メートル</string>
+	<string name="feet">フィート</string>
+	<string name="exit">終了</string>
+	<string name="Exit">終了</string>
+	<string name="exit_menu">終了しますか？</string>
+	<string name="cancel">キャンセル</string>
+	<string name="knots_to_kmh">ノットからkm/h</string>
+	<string name="kmh">km/h</string>
+	<string name="knots">ノット</string>
+	<string name="kmh_to_knots">km/hからノット</string>
+	<string name="before">変換前</string>
+	<string name="after">変換後</string>
+</resources>

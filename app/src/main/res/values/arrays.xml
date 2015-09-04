@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="unit_name">
+		<item>@string/kilo_to_mile</item>
+		<item>@string/mile_to_kilo</item>
+		<item>@string/feet_to_meter</item>
+		<item>@string/meter_to_feet</item>
+		<item>@string/knots_to_kmh</item>
+		<item>@string/kmh_to_knots</item>
+	</string-array>
+	<string-array name="units">
+		<item>0.539956803,kilo_to_mile</item>
+		<item>1.8520,mile_to_kilo</item>
+		<item>0.3048,feet_to_meter</item>
+		<item>3.2808399,meter_to_feet</item>
+		<item>1.8520,knots_to_kmh</item>
+		<item>0.539956803,kmh_to_knots</item>
+	</string-array>
+</resources>

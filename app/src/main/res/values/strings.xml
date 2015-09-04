@@ -1,0 +1,25 @@
+<resources>
+	<string name="app_name">Unit conversion</string>
+
+	<string name="prease_input">Please input</string>
+	<string name="action_settings">Settings</string>
+	<string name="unit">Unit setting</string>
+	<string name="kilo_to_mile">Kilometer to Nautical mile</string>
+	<string name="mile_to_kilo">Nautical mile to Kilometer</string>
+	<string name="mile">mile</string>
+	<string name="kilo">km</string>
+	<string name="feet_to_meter">Feet to Meter</string>
+	<string name="meter_to_feet">Meter to Feet</string>
+	<string name="meter">Meter</string>
+	<string name="feet">Feet</string>
+	<string name="exit">Exit</string>
+	<string name="Exit">Exit</string>
+	<string name="exit_menu">Do you want to Exit?</string>
+	<string name="cancel">cancel</string>
+	<string name="knots_to_kmh">Knots to Kilometers per hour</string>
+	<string name="kmh">km/h</string>
+	<string name="knots">knots</string>
+	<string name="kmh_to_knots">Kilometers per hour to Knots</string>
+	<string name="before">before</string>
+	<string name="after">after</string>
+</resources>
