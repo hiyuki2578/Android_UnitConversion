@@ -147,39 +147,51 @@ public class MainActivity extends ActionBarActivity {
 	@Override
 	protected void onResume() {
 		super.onResume();
-		SharedPreferences spf = PreferenceManager.getDefaultSharedPreferences(this);
-		String default_str = "0.539956803,kilo_to_mile";
-		String pref = spf.getString("unit", default_str);
-		String[] prefs = pref.split(",",0);
-		String before_units;
-		switch (prefs[1]){
-			case "kilo_to_mile":
-				before_units = getResources().getString(R.string.kilo);
-				break;
-			case "mile_to_kilo":
-				before_units = getResources().getString(R.string.mile);
-				break;
-			case "feet_to_meter":
-				before_units = getResources().getString(R.string.feet);
-				break;
-			case "meter_to_feet":
-				before_units = getResources().getString(R.string.meter);
-				break;
-			case "knots_to_kmh":
-				before_units = getResources().getString(R.string.knots);
-				break;
-			case "kmh_to_knots":
-				before_units = getResources().getString(R.string.kmh);
-				break;
-			default:
-				before_units = getResources().getString(R.string.kilo);
-				break;
+		EditText edit = (EditText)findViewById(R.id.editText);
+		SpannableStringBuilder sp = (SpannableStringBuilder)edit.getText();
+		if(sp.toString().isEmpty()){
+			SharedPreferences spf = PreferenceManager.getDefaultSharedPreferences(this);
+			String default_str = "0.539956803,kilo_to_mile";
+			String pref = spf.getString("unit", default_str);
+			String[] prefs = pref.split(",",0);
+			String before_units;
+			switch (prefs[1]){
+				case "kilo_to_mile":
+					before_units = getResources().getString(R.string.kilo);
+					break;
+				case "mile_to_kilo":
+					before_units = getResources().getString(R.string.mile);
+					break;
+				case "feet_to_meter":
+					before_units = getResources().getString(R.string.feet);
+					break;
+				case "meter_to_feet":
+					before_units = getResources().getString(R.string.meter);
+					break;
+				case "knots_to_kmh":
+					before_units = getResources().getString(R.string.knots);
+					break;
+				case "kmh_to_knots":
+					before_units = getResources().getString(R.string.kmh);
+					break;
+				default:
+					before_units = getResources().getString(R.string.kilo);
+					break;
+			}
+			TextView text = (TextView)findViewById(R.id.textView2);
+			text.setText(before_units);
+			TextView text1 = (TextView)findViewById(R.id.textView);
+			String input = getResources().getString(R.string.prease_input);
+			text1.setText(input);
+		}else{
+			TextView text = (TextView)findViewById(R.id.mile);
+			TextView text1 = (TextView)findViewById(R.id.textView2);
+			float float_text = Float.parseFloat(sp.toString());
+			String ans = calc(float_text);
+			String[] cal = ans.split(",",0);
+			text.setText(cal[0]);
+			text1.setText(cal[1]);
 		}
-		TextView text = (TextView)findViewById(R.id.textView2);
-		text.setText(before_units);
-		TextView text1 = (TextView)findViewById(R.id.textView);
-		String input = getResources().getString(R.string.prease_input);
-		text1.setText(input);
 	}
 	@Override
 	public boolean onKeyDown( int keyCode, KeyEvent event) {
